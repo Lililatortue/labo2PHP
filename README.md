@@ -18,7 +18,7 @@ il seras interer dans main.php se script permettras de envoyer une requete POST 
 est la classe qui elle gere les invariance                                                            
 - [x] creer le tache model                                                                                      
 - [x] assurer que les invariances sont gere                                                                      
-- [ ] retourner les erreurs approprie           &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non tester 
+- [ ] retourner les erreurs approprie           &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non tester 
 
 
 ### --dailytask.php--
@@ -29,5 +29,5 @@ class qui pour but de gerer le nombre de tache par jour
 
 ### -- toFile.php --
 creer un fichier de l'horaire                                                                             
-- [x] creer le file class      ````````````````````````````````````````````````````````````````````````````````non tester
-- [ ] retourner les erreurs approprie                                                                       -[ ]completer   -[ ]tester 
+- [x] creer le file class&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non tester
+- [ ] retourner les erreurs approprie                                                                       
