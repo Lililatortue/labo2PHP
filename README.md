@@ -6,7 +6,8 @@ majorite des commenttaire
 
 ## Exercice3:
 ce fichier permet d'inserer des taches, il montre un horaire
-- 1 calendrier, il faut que nous affichions un horaire, fesons en sorte que au debut sa soit 7 jours      -[ ]non completer 
+- 1 calendrier, il faut que nous affichions un horaire, fesons en sorte que au debut sa soit 7 jours
+  -[ ]non completer 
   - 1.1 gerer les jours et les dates                                                                       -[ ] non completer
 - 2 avoir un boutton qui permet de creer un fichier.txt de l'horaire                                      -[ ] non completer
 
