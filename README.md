@@ -6,14 +6,14 @@ majorite des commenttaire
 
 ## Exercice3:
 ce fichier permet d'inserer des taches, il montre un horaire
--[ ] calendrier, il faut que nous affichions un horaire, fesons en sorte que au debut sa soit 7 jours
+- [ ] calendrier, il faut que nous affichions un horaire, fesons en sorte que au debut sa soit 7 jours
   non completer 
-  - 1.1 gerer les jours et les dates                                                                       -[ ] non completer
-- 2 avoir un boutton qui permet de creer un fichier.txt de l'horaire                                      -[ ] non completer
+  - 1.1 gerer les jours et les dates                                                                       - [ ] non completer
+- 2 avoir un boutton qui permet de creer un fichier.txt de l'horaire                                      - [ ] non completer
 
 ### --formulaire--
 il seras interer dans main.php se script permettras de envoyer une requete POST pour inserer une tache 
-- 1 creer le form ----                                                                                   -[x]completer        -[ ]tester    
+- 1 creer le form ----                                                                                   - [x]completer        - [ ]tester    
 
 ### -- tachemodel.php -- 
 est la classe qui elle gere les invariance                                                            
