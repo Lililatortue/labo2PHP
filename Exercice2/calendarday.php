@@ -17,7 +17,7 @@
 <ul><?php
     if(isset($_SESSION['rdv'])) {
         foreach($_SESSION['rdv'] as $rdv){
-
+                    // instance of est une maniere de check si la variable est du meme type que la classe
             if($rdv instanceof rendezVous 
                     && $rdv->getAnne() == $year 
                     && $rdv->getMoi() == $month 
