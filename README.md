@@ -30,4 +30,4 @@ class qui pour but de gerer le nombre de tache par jour
 ### -- toFile.php --
 creer un fichier de l'horaire                                                                             
 - [x] creer le file class      ````````````````````````````````````````````````````````````````````````````````non tester
-- [ ]retourner les erreurs approprie                                                                       -[ ]completer   -[ ]tester 
+- [ ] retourner les erreurs approprie                                                                       -[ ]completer   -[ ]tester 
