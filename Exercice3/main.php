@@ -55,7 +55,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 <form action="ToPrint.php" method='post'>
 
 <button type="submit" ><h2>print</h2></button>
-</form><br><br><br>
+</form><br>
+
+<form action="fromRead.php" method='post'>
+
+<button type="submit" ><h2>read</h2></button>
+</form><br><br><br><br><br>
 <!--make sure that $date_picker est set-->
 <?php
   if(isset($date_picker)){

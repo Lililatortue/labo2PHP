@@ -18,17 +18,22 @@ public function getDure(){
 //setter
 
 //invariance
-private function setDure($duretest){
+ function setDure($duretest){
     if($duretest>24 ||$duretest<=0){echo "erreur";}
     $this->dure=$duretest;
 }
-
-//constructeur
-function __construct($titre,$description,$dure){
+function setTitre($titre){
     $this -> titre = $titre;
-    $this -> description = $description;
-    $this->setDure($dure);
 }
+function setDescription($description){
+    $this -> description = $description;
+}
+//constructeur
+function __construct(){
+
+}
+
+
 }
 
 ?>

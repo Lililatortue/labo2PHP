@@ -4,6 +4,8 @@ require "tachemodel.php";
 class file{
 private static $filename;
 
+
+//singleton
 function __construct($filename){
     if (self::$filename==null){
         self::$filename=$filename;
@@ -16,14 +18,14 @@ public function writeDailyTaskInFile(){
     $file=fopen(self::$filename . ".txt", "w");
                                     //en gros tu prends chaque key et tu vas chercher leur value
     foreach($_SESSION['task_list'] as $date => $daily_task){
-       fwrite( $file, " " . $date . ":\n\n");
+       fwrite( $file, " Date :" . $date . "\n\n");
         //aller chercher les objets taches
         $taches= $daily_task->getDailyTask();
         //iterer a travers les taches
         foreach($taches as $tache){
-            fwrite($file,"\ttitre :" . $tache->getTitre());
+            fwrite($file,"\ttache\n\ttitre :" . $tache->getTitre());
             fwrite($file,"\n\tdescription :" .  $tache->getDescription());
-            fwrite($file,"\n\tdure :" . $tache->getDure() . "\n\n");
+            fwrite($file,"\n\tdure :" . $tache->getDure() . "\nnext\n");
         }
     }
     fclose($file);

@@ -10,7 +10,10 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     }
 
     //creation de la tache model
-    $tache= new tachemodel($_POST['titre'],$_POST['description'],$_POST['dure']);
+    $tache= new tachemodel();
+    $tache->setTitre($_POST['titre']);
+    $tache->setDescription($_POST['description']);
+    $tache->setDure($_POST['dure']);
     //si la clee existe pas on initialise les objets necessaire
     if(!isset($_SESSION['task_list'][$_POST['date']])){
         $daily_tasks= new dailyTask($_POST['date']);
