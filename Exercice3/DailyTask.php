@@ -21,7 +21,7 @@ class dailyTask{
         $total_time=$nouvelle_tache->getDure();
         if($this->daily_task!=null){
             foreach($this->daily_task as $task){
-                if ($task !== null) { // Ensure $task is not null
+                if ($task !== null) { 
                     $total_time += $task->getDure();
                 }
             }

@@ -3,9 +3,9 @@
 
 -- main.php --
 ce fichier permet d'inserer des taches, il montre un horaire
-1- calendrier, il faut que nous affichions un horaire, fesons en sorte que au debut sa soit 7 jours      non completer
-  1.1 gerer les jours et les dates                                                                       non completer
-2- avoir un boutton qui permet de creer un fichier.txt de l'horaire                                      non completer
+1- calendrier, il faut que nous affichions un horaire, fesons en sorte que au debut sa soit 7 jours      completer  tester
+  1.1 gerer les jours et les dates                                                                       completer  tester
+2- avoir un boutton qui permet de creer un fichier.txt de l'horaire                                      completer  tester
 
 --formulaire--
 il seras interer dans main.php se script permettras de envoyer une requete POST pour inserer une tache 
@@ -29,6 +29,8 @@ creer un fichier de l'horaire
 1- creer le file class                                                                                   completer   non tester
 3- retourner les erreurs approprie                                                                       non completer non tester
 -->
+
+<!-- Gestion des dates du planificateurs d'horaire-->
 <?php 
 if($_SERVER['REQUEST_METHOD']=='POST'){
   $date_picker=$_POST['date_time_picker'];
@@ -48,8 +50,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 <label name="date_time_picker">Choose a date</label><br>
 <input type="date" name="date_time_picker">
 <button type="submit" >submit</button>
-</form><br><br><br>
+</form><br>
+<!-- form pour print utilise l'objet toPrint.php-->
+<form action="ToPrint.php" method='post'>
 
+<button type="submit" ><h2>print</h2></button>
+</form><br><br><br>
 <!--make sure that $date_picker est set-->
 <?php
   if(isset($date_picker)){
