@@ -1,39 +1,39 @@
 <?php 
-session_start();
-class rendezVous{
+session_start(); //pour stoquer les cookies/donnés de RDV quand on reload
+
+class rendezVous
+{
+    //Constructors
     private $anne;
-    private $moi;
+    private $mois;
     private $jour;
-    private $heure;    
+    private $heure;
     private $titre;
     private $description;
 
-    function __construct($anne,$moi,$jour,$heure,$titre,$description){
+    function __construct($anne,$mois,$jour,$heure,$titre,$description)
+    {
         $this -> anne = $anne;
-        $this -> moi = $moi;
+        $this -> mois = $mois;
         $this -> jour = $jour;
         $this -> heure = $heure;
         $this -> titre = $titre;
         $this -> description = $description;
     }
-    public function getAnne(){
-        return $this -> anne;
-    }
-    public function getMoi(){
-        return $this -> moi;
-    }
-    public function getJour(){
-        return $this -> jour;
-    }
-    public function getHeure(){
-        return $this -> heure;
-    }
-    public function getTitre(){
-        return $this -> titre;
-    }
-    public function getDescription(){
-        return $this -> description;
-    }
+
+    //Methodes
+    public function getAnne()
+    {  return $this -> anne;  }
+    public function getMois()
+    {  return $this -> mois; }
+    public function getJour()
+    {  return $this -> jour;  }
+    public function getHeure()
+    {  return $this -> heure;  }
+    public function getTitre()
+    {  return $this -> titre; }
+    public function getDescription()
+    {  return $this -> description;  }
 }
 
 ?>
